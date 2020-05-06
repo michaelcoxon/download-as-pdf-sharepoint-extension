@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "download-as-pdf-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/downloadAsPdf/DownloadAsPdfCommandSet.js",
+          "manifest": "./src/extensions/downloadAsPdf/DownloadAsPdfCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DownloadAsPdfCommandSetStrings": "lib/extensions/downloadAsPdf/loc/{locale}.js"
+  }
+}

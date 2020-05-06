@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://connectedsystems.sharepoint.com/sites/mike-dev/Shared%20Documents/Forms/AllItems.aspx",
+      "customActions": {
+        "e8f75565-8d68-4521-a0cd-65ce08da9f7b": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "downloadAsPdf": {
+      "pageUrl": "https://connectedsystems.sharepoint.com/sites/mike-dev/Shared%20Documents/Forms/AllItems.aspx",
+      "customActions": {
+        "e8f75565-8d68-4521-a0cd-65ce08da9f7b": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}
