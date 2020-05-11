@@ -16,14 +16,14 @@ import { SPHttpClient, SPHttpClientResponse, SPHttpClientConfiguration } from '@
  * If your command set uses the ClientSideComponentProperties JSON input,
  * it will be deserialized into the BaseExtension.properties object.
  * You can define an interface to describe it.
- */
+
 export interface IDownloadAsPdfCommandSetProperties
 {
   // This is an example; replace with your own properties
   sampleTextOne: string;
   sampleTextTwo: string;
 }
-
+ */
 const SUPPORTED_FORMATS = [
   'csv',
   'doc', 'docx',
@@ -35,7 +35,7 @@ const SUPPORTED_FORMATS = [
 
 const LOG_SOURCE: string = 'DownloadAsPdfCommandSet';
 
-export default class DownloadAsPdfCommandSet extends BaseListViewCommandSet<IDownloadAsPdfCommandSetProperties> {
+export default class DownloadAsPdfCommandSet extends BaseListViewCommandSet<never> {
 
   @override
   public onInit(): Promise<void>
